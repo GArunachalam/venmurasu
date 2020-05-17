@@ -2,6 +2,7 @@ baseURL = "https://garunachalam.github.io/"
 languageCode = "en-us"
 title = "B o o k i s h !"
 theme = "mainroad"
+googleAnalytics = "G-8MZ1KW34HW" # Enable Google Analytics by entering your tracking id
 # menu = ["main", "header", "footer"]
 sectionPagesmenu = "main"
 
