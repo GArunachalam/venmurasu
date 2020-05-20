@@ -1,0 +1,23 @@
+<link rel="stylesheet" type="text/css" href="/css/table_simple.css">
+
+{{ $arg := .Get 0 }}
+{{ $jsonDataFile := index .Site.Data $arg }}
+
+<table>
+    <tr>
+        {{ range $header := first 1 $jsonDataFile }}
+            {{ range $key, $value := $header }}            
+                <th>{{ replaceRE "[0-9]+[.]?" "" $key }}</th>
+            {{end}}
+        {{end}}
+    </tr>
+    <tr>
+        {{ range $entries := $jsonDataFile }}
+            <tr>
+                {{ range $key, $value := $entries }}
+                    <td>{{ $value  }}</td>
+                {{end}}
+            </tr>
+        {{ end }}
+    </tr>
+</table>

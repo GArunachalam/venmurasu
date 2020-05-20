@@ -1,78 +1,54 @@
 baseURL = "https://garunachalam.github.io/"
 languageCode = "en-us"
-title = "B o o k i s h !"
+title = "Analyzing Jeyamohan's Venmurasu"
 theme = "mainroad"
 googleAnalytics = "G-8MZ1KW34HW" # Enable Google Analytics by entering your tracking id
 # menu = ["main", "header", "footer"]
 sectionPagesmenu = "main"
+pluralizelisttitles = false
 
 [Author]
     name = "Ganesan Arunachalam"
-    bio = "An avid read of Tamil litrature, primarily Jeyamohan, and a software engineer."
+    bio = "An avid reader of Tamil litrature, primarily Jeyamohan, and a software engineer."
     avatar = "img/avatar.png"
 
 [[menu.main]]
     identifier = "குரு வனக்கம்"
     name = "குரு வனக்கம்"
     title = "குரு வனக்கம்"
-    url = "/GuruVanakkam"
-    weight = -110
+    url = "/guru_vanakkam"
+    weight = -150
 
 [[menu.main]]
     identifier = "The Inspiration"
     name = "The Inspiration"
     title = "The Inspiration"
     url = "/the_inspiration"
-    weight = -105
-
-[[menu.main]]
-    identifier = "About"
-    name = "About"
-    title = "About"
-    url = "/About"
     weight = -100
 
-    # [[menu.main]]
-#         identifier = "Blog"
-#         name = "This is the blog section"
-#         title = "Blogs Section"
-#         url = "/blog/"
-#         weight = -100
-#     [[menu.main]]
-#         identifier = "Venmurasu Analysis"
-#         name = "This is the blog section"
-#         title = "Venmurasu Analysis"
-#         url = "/venmurasu_analysis/"
-#         weight = -90
-
-
 [Params]
-    subtitle = "A Site for Analyzing Venmurasu" # Subtitle of your site
-    description = "Text mining the epic Venmurasu by author Jeyamohan" # Description of your site
+    subtitle = "A Text Mining Experiment" # Subtitle of your site
+    description = "Interesting facts about Venmurasu" # Description of your site
     copyright = "Ganesan Arunachalam" # Footer copyright holder, otherwise will use site title
     opengraph = true
-    readmore = false # Show "Read more" button in list if true
+    readmore = true # Show "Read more" button in list if true
     # leftsidebar = true # Move sidebar to the left side if true
     # toc = true # Enable Table of Contents
     authorbox = false
     pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
-    # mainSections = ["blog", "venmurasu analysis"] # Specify section pages to show on home page and the "Recent articles" widget
-  
-    # post_navigation = true
-    postSections = ["venmurasu analysis"] # the section pages to show on home page and the "Recent articles" widget
+    mainSections = ["venmurasu"] # Specify section pages to show on home page and the "Recent articles" widget
 
 [Params.sidebar]
     home = "left" # Configure layout for home page
     list = "left"  # Configure layout for list pages
-    single = "left" # Configure layout for single pages
+    single = false # Configure layout for single pages
     # Enable widgets in given order
-    widgets = ["search", "recent", "categories", "taglist", "languages"]
+    widgets = ["recent", "categories", "taglist"]
 
 
 [Params.widgets]
-    search = true # Enable "Search" widget
-    recent_articles = true # Enable "Recent articles" widget
-    recent_articles_num = 10 # Set the number of articles in the "Recent articles" widget
+    search = false # Enable "Search" widget
+    recent_num = 10 # Set the number of articles in the "Recent articles" widget
     categories = true # Enable "Categories" widget
     tags = true # Enable "Tags" widget
     tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
